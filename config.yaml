@@ -1,0 +1,7 @@
+sections:
+  - name: Installation
+    include: true
+  - name: Usage
+    include: true
+  - name: Examples
+    include: true
