@@ -3,6 +3,9 @@ from drf_yasg.views import get_schema_view
 from allauth.account.views import ConfirmEmailView
 from drf_yasg import openapi
 from rest_framework import permissions
+from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()
 
 from . import views
 
@@ -39,6 +42,7 @@ urlpatterns = [
     path('vendas/<int:pk>/', views.VendaDetail.as_view(), name='venda_detail'),
     path('itemvendas/', views.ItemVendaList.as_view(), name='item_venda_list'),
     path('itemvendas/<int:pk>/', views.ItemVendaDetail.as_view(), name='item_venda_detail'),
+    path('api/auth/', include('django_rest_firebase_auth.urls')),
     path('accounts/', include('allauth.urls')),
     path('accounts/confirm-email/<str:key>/', ConfirmEmailView.as_view(), name='account_confirm_email'),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),

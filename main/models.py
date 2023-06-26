@@ -8,14 +8,11 @@ from django.dispatch import receiver
 from django.contrib.auth.models import User
 
 
-class TipoUsuario(Enum):
-    ADM = 'adm'
-    GER = 'gerente'
-    FUN = 'funcionario'
-    CLI = 'cliente'
-
-    def to_firestore_value(self):
-        return self.value
+class TipoUsuario(models.TextChoices):
+    ADM = 'adm', 'Administrador'
+    GER = 'gerente', 'Gerente'
+    FUN = 'funcionario', 'Funcionário'
+    CLI = 'cliente', 'Cliente'
 
 class UserManager(BaseUserManager):
     def create_user(self, email, uid, name=None, image=None, provider=None, **extra_fields):
