@@ -1,7 +1,7 @@
-Claro! Aqui está um exemplo de README.md que você pode usar como base para a instalação e inicialização do seu projeto:
+Claro! Aqui está um exemplo de README.md que você pode usar como base para a instalação e inicialização do fbite:
 
 ```markdown
-# Nome do Seu Projeto
+# fbite
 
 Descrição curta do projeto.
 
@@ -9,7 +9,7 @@ Descrição curta do projeto.
 
 - Python 3.9 ou superior
 - pip (gerenciador de pacotes do Python)
-- Outros pré-requisitos específicos do seu projeto
+- Outros pré-requisitos específicos do fbite
 
 ## Instalação
 
@@ -67,4 +67,4 @@ Descrição curta do projeto.
 
 ```
 
-Certifique-se de personalizar as seções e as instruções de acordo com o seu projeto específico. Adicione ou remova seções conforme necessário. Lembre-se de incluir informações importantes sobre a configuração do ambiente, como pré-requisitos e configurações do arquivo `.env`.
+Certifique-se de personalizar as seções e as instruções de acordo com o fbite específico. Adicione ou remova seções conforme necessário. Lembre-se de incluir informações importantes sobre a configuração do ambiente, como pré-requisitos e configurações do arquivo `.env`.
