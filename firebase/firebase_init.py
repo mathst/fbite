@@ -31,4 +31,3 @@ def db():
     else:
         print("Firebase não inicializado.")
         return None
-curl -u 'mathst' https://api.github.com/mathst/repos -d '{"name":"fbite}'
